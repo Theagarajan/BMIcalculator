@@ -1,0 +1,16 @@
+{
+    "contents" : "\n# This is the user-interface definition of a Shiny web application.\n# You can find out more about building applications with Shiny here:\n# \n# http://www.rstudio.com/shiny/\n#\n\nlibrary(shiny)\n\nshinyUI(pageWithSidebar(\n  \n  # Application title\n  headerPanel(\"BMI Calculator\"),\n  \n  # Sidebar with a slider input for number of bins\n  sidebarPanel(\n    sliderInput(\"kgs\",\n                \"Weight in kgs\",\n                min = 1,\n                max = 250,\n                value = 60),\n    sliderInput(\"cms\",\n                \"Height in cms\",\n                min = 1,\n                max = 300,\n                value = 180)\n    \n  ),\n  \n  # Show a plot of the generated distribution\n  mainPanel(\n    h1('BMI Output'),\n    verbatimTextOutput(\"BMI\"),\n    h6('18.5 or less  Underweight'),\n    h6('18.5 to 24.99  Normal Weight'),\n    h6('25 to 29.99  Overweight'),\n    h6('30 to 34.99  Obesity (Class 1)'),\n    h6('35 to 39.99  Obesity (Class 2)'),\n    h6('40 or greater  Morbid Obesity')\n    \n  )\n))\n",
+    "created" : 1445757731964.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3693670070",
+    "id" : "966DB7ED",
+    "lastKnownWriteTime" : 1445764436,
+    "path" : "E:/machine learning/Pratical Machine Learning/BMIcalc/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

@@ -1,0 +1,16 @@
+{
+    "contents" : "\n# This is the server logic for a Shiny web application.\n#\n\nlibrary(shiny)\n\nshinyServer(function(input, output) {\n   \n  output$BMI <- renderPrint({ input$kgs/(input$cms/100)^2  \n  })\n  \n})\n",
+    "created" : 1445757733134.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1189296589",
+    "id" : "663A969",
+    "lastKnownWriteTime" : 1445764567,
+    "path" : "E:/machine learning/Pratical Machine Learning/BMIcalc/server.R",
+    "project_path" : "server.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
